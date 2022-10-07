@@ -26,7 +26,19 @@
  // b) The constructor for the class Movie will set the class property rating to "PG"
  // as default when no rating is provided.
 
- c
+ class movie {
+  constructor(title, studio, rating) {
+    this.title = title;
+    this.studio = studio;
+    this.rating = rating || "PG";
+  }
+ }
+
+var m1 = new movie("Casino Royale","Eon Productions","PG13");
+var m2 = new movie("Don","Red Gaint");
+console.log(m1);
+console.log(m2);
+
   
  //c) Write a method getPG, which takes an array of base type Movie as its argument, and returns a new array
   //  of only those movies in the input array with a rating of "PG". You may assume the input array is full of
@@ -100,7 +112,7 @@ class person {
     }
     
     }
-}printperson
+
 
   var p1 = new person("Vichu","Vishwa","22","1234567890","vishwavichu004@gmail.com");
   console.log(p1);
